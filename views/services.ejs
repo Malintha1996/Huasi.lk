@@ -1,0 +1,26 @@
+<!--navbar-->
+<% include partials/navbar.ejs %>
+
+<section id="testimonial">
+    <div class="container" id="p" style="margin-top:7vh;margin-bottom:10vh;">
+                <div  class="imgdesc" style="align-content: center;"  >
+                     <div class="row" style="height:85%;width:100%;">
+                     <img style="height:100%;width:100%;" src="<%=service.picture%>"  alt="Card image"/>
+                    </div>
+                     
+                </div>
+                <div  class="imgdesc" id="col" style="align-content:center;">
+                    <p style="font-family: Verdana;font-size: 150%;color:white"><%=service.name %></p>
+                    <p style="font-family:verdana;color:white "><%= service.description %></p>
+                  
+              </div>
+        </div>
+        
+           
+      
+    
+</section>
+
+   
+<!--footer-->
+<% include partials/footer.ejs %>

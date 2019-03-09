@@ -1,0 +1,17 @@
+<head>
+      
+</head>
+<div class="container-fluid">
+                            
+        <% for(var i=0; i<product.items.length; i++){ %>
+            <div  class="imgdesc"  >
+                 <div class="row" style="height:85%;width:100%;">
+                 <img style="height:100%;width:100%;" src="<%=product.items[i].picture%>"  alt="Card image"/>
+                </div>
+                 <div class="row" style="background:floralwhite;width:100%;height:20%;">
+                  <p style="font-family: Verdana;font-size: 150%"><%=product.items[i].name %></p>
+                  <p style="font-family:verdana "><%= product.items[i].description %></p>
+                </div>
+            </div>
+        <% } %>
+</div>

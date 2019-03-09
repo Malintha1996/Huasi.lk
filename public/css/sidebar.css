@@ -1,0 +1,59 @@
+.sidebar {
+   margin: 0;
+   padding: 0;
+   width: 250px;
+   background-color:#34373a;
+   position: fixed;
+   height: 70%;
+   overflow:hidden;
+ }
+ 
+ .sidebar a {
+   display: block;
+   color: white;
+   padding: 16px;
+   text-decoration: none;
+ }
+  
+ 
+ 
+ .sidebar a:hover {
+   background-color: #555;
+   color: white;
+ }
+ 
+ div.content {
+   margin-left: 200px;
+   padding: 1px 16px;
+   height: 1000px;
+ }
+ #trigger{
+   display:none;
+ }
+ 
+ @media screen and (max-width: 700px) {
+   .sidebar {
+     width: 100%;
+     height: auto;
+     position: relative;
+   }
+   .sidebar a {float: left;
+     width:100%;
+   }
+   div.content {margin-left: 0;
+  }
+  #trigger{
+    display:block;
+    width:10%;
+    float:right;
+  }
+ }
+ 
+ @media screen and (max-width: 400px) {
+   .sidebar a {
+     text-align: center;
+     float: none;
+   }
+  
+ }
+ 

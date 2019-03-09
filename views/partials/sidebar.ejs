@@ -1,0 +1,31 @@
+
+<head>
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <script>
+     
+    </script>
+    
+</head>
+
+    <!-- Sidebar -->
+
+<a id="trigger" style="position:absolute;top:10vh;width:10vw;" href="#" class="navbar-toggle" data-toggle="collapse" data-target="#sidebar">
+        <i class="fa fa-bars"></i>
+</a>
+
+<div class="sidebar" id="sidebar" style="margin-top:9vh;">
+  
+    <% for(var i=0; i<products.length; i++){ %>
+     <% if(i==0){ %>
+      <a href="/products?id=<%=products[i].id%>&&sid=<%=products[i].sid%>" class="active"><%=products[0].name%></a>
+     <% }
+     else{%>
+     <a href="/products?id=<%=products[i].id %>&&sid=<%=products[i].sid%>" ><%=products[i].name%></a>
+     <%}%>
+  <% } %>
+   
+
+</div>
+    
+    <!-- Content -->
+    
